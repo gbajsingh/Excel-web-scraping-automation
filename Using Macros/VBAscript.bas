@@ -7,7 +7,7 @@ Sub excelAutomation()
     Set Rng = Selection 'Select cell/cells Range
     
     Set IE = CreateObject("InternetExplorer.Application")
-    IE.Visible = False 'True if the actions performed are visible in the internet explorer browser
+    IE.Visible = True 'True if the actions performed are visible in the internet explorer browser
     Dim doc As HTMLDocument
     
     Dim PClass As String 'Property Class
@@ -27,72 +27,72 @@ Sub excelAutomation()
             GoTo NextIteration
                
         'else first look by city names; extract all the text left of the city name and store under S_Text(i.e. text for searching)
-        ElseIf FullAdd Like "* SANTA CRUZ CA *" Then
-            Pos = InStr(1, FullAdd, " SANTA CRUZ CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* SANTA CRUZ CA*" Then
+            Pos = InStr(1, FullAdd, " SANTA CRUZ CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* WATSONVILLE CA *" Then 'if * pattern * in text
-            Pos = InStr(1, FullAdd, " WATSONVILLE CA ", vbBinaryCompare) - 1 'then position is strating position of pattern - 1
+        ElseIf FullAdd Like "* WATSONVILLE CA*" Then 'if * pattern * in text
+            Pos = InStr(1, FullAdd, " WATSONVILLE CA", vbBinaryCompare) - 1 'then position is strating position of pattern - 1
             S_Text = Trim(Left(FullAdd, Pos)) 'and S-Text(i.e text for searching) is left of position
             GoTo ContinueHere
-        ElseIf FullAdd Like "* FREEDOM CA *" Then
-            Pos = InStr(1, FullAdd, " FREEDOM CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* FREEDOM CA*" Then
+            Pos = InStr(1, FullAdd, " FREEDOM CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* SCOTTS VALLEY CA *" Then
-            Pos = InStr(1, FullAdd, " SCOTTS VALLEY CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* SCOTTS VALLEY CA*" Then
+            Pos = InStr(1, FullAdd, " SCOTTS VALLEY CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* SOQUEL CA *" Then
-            Pos = InStr(1, FullAdd, " SOQUEL CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* SOQUEL CA*" Then
+            Pos = InStr(1, FullAdd, " SOQUEL CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* CAPITOLA CA *" Then
-            Pos = InStr(1, FullAdd, " CAPITOLA CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* CAPITOLA CA*" Then
+            Pos = InStr(1, FullAdd, " CAPITOLA CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* APTOS CA *" Then
-            Pos = InStr(1, FullAdd, " APTOS CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* APTOS CA*" Then
+            Pos = InStr(1, FullAdd, " APTOS CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* DAVENPORT CA *" Then
-            Pos = InStr(1, FullAdd, " DAVENPORT CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* DAVENPORT CA*" Then
+            Pos = InStr(1, FullAdd, " DAVENPORT CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* LA SELVA BCH CA *" Then
-            Pos = InStr(1, FullAdd, " LA SELVA BCH CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* LA SELVA BCH CA*" Then
+            Pos = InStr(1, FullAdd, " LA SELVA BCH CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
         ElseIf FullAdd Like "* PARADISE PARK CA*" Then
             Pos = InStr(1, FullAdd, " PARADISE PARK CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* BONNY DOON CA *" Then
-            Pos = InStr(1, FullAdd, " BONNY DOON CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* BONNY DOON CA*" Then
+            Pos = InStr(1, FullAdd, " BONNY DOON CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* FELTON CA *" Then
-            Pos = InStr(1, FullAdd, " FELTON CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* FELTON CA*" Then
+            Pos = InStr(1, FullAdd, " FELTON CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* MT HERMON CA *" Then
-            Pos = InStr(1, FullAdd, " MT HERMON CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* MT HERMON CA*" Then
+            Pos = InStr(1, FullAdd, " MT HERMON CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* BEN LOMOND CA *" Then
-            Pos = InStr(1, FullAdd, " BEN LOMOND CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* BEN LOMOND CA*" Then
+            Pos = InStr(1, FullAdd, " BEN LOMOND CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* BOULDER CREEK CA *" Then
-            Pos = InStr(1, FullAdd, " BOULDER CREEK CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* BOULDER CREEK CA*" Then
+            Pos = InStr(1, FullAdd, " BOULDER CREEK CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* BROOKDALE CA *" Then
-            Pos = InStr(1, FullAdd, " BROOKDALE CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* BROOKDALE CA*" Then
+            Pos = InStr(1, FullAdd, " BROOKDALE CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
-        ElseIf FullAdd Like "* LOS GATOS CA *" Then
-            Pos = InStr(1, FullAdd, " LOS GATOS CA ", vbBinaryCompare) - 1
+        ElseIf FullAdd Like "* LOS GATOS CA*" Then
+            Pos = InStr(1, FullAdd, " LOS GATOS CA", vbBinaryCompare) - 1
             S_Text = Trim(Left(FullAdd, Pos))
             GoTo ContinueHere
             
