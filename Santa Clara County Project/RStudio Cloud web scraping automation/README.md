@@ -1,6 +1,6 @@
 # RStudio Cloud web scraping automation
 Developed a tool to automatically output an excel file with web query results filled in a desired column. To accomplish the task I wrote a R script on RStudio cloud service.
-The script takes the information(Addresses) from Property Address column; navigates to the desired website, performs a query on the website
+The script takes the information(Addresses) from Property Address column; submit a form with the address on the appropriate website(i.e. Propertyshark.com), performs a query
 and extracts the results back into same spreadsheet.
 
 The script also saves the work in case the execution process is interupted because of code error/bug or simply loosing internet connection.
