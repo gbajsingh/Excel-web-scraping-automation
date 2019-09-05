@@ -7,3 +7,11 @@ The script also saves the work in case the execution process is interupted becau
 Which means it outputs an excel file with all the web searches performed before interuption.
 
 The script also picks up from previous excel row where it was interrupted to avoid extracting already extracted data.
+
+## Demo
+
+Part 1
+https://www.youtube.com/watch?v=s-f9aDU8h0A&t=3s
+
+Part 2
+https://www.youtube.com/watch?v=sPVJCYifRXg
