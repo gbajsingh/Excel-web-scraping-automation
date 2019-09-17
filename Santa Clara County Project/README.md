@@ -10,8 +10,4 @@ The script also picks up from previous excel row where it was interrupted to avo
 
 ## Demo
 
-Part 1
-https://www.youtube.com/watch?v=s-f9aDU8h0A&t=3s
-
-Part 2
-https://www.youtube.com/watch?v=sPVJCYifRXg
+https://www.youtube.com/watch?v=ZUTEBrtBWLg
