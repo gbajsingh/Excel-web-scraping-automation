@@ -59,4 +59,4 @@ ggplot(HR_data, aes(x=Attrition, y=DistanceFromHome, fill=Attrition)) +
       stat_summary(fun.y=median, colour="darkred", geom="text", vjust=1.2, aes( label=round(..y.., digits=1))) +
         ggtitle("Boxplot of 'Distance From Home' by Attrition")
 ```
-![attrition distance boxplot](https://user-images.githubusercontent.com/46609482/68715329-9a2a2100-0556-11ea-92de-3b4544a7eec7.PNG) Diamond = *Mean*; Line = *Median*
+![attrition distance boxplot](https://user-images.githubusercontent.com/46609482/68715329-9a2a2100-0556-11ea-92de-3b4544a7eec7.PNG)Diamond = *Mean*; Line = *Median*
