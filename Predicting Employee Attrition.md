@@ -1,5 +1,7 @@
 # Introduction
-Employee attrition is basically a employee turnover rate of an organization. Attrition can be caused by both volunatry(for e.g. retirement) or involuntary (for e.g. layoff) reason. Nonethless, identifying attrition cause can help an organization to take prevention measures. For example, a company would rather keep its high performance employees than to train and hire new ones.
+Employee attrition is basically a employee turnover rate of an organization. Attrition can be caused by both voluntary(for e.g. retirement, self-quit) or involuntary (for e.g. layoff) reason. Nonethless, identifying factors that leads to attrition can help an organization to take prevention measures. For example, a company would rather keep its high performance employees than to train and hire new ones.
+
+Age seems like a reasonable factor for the retirement related attrition. On the other hand, income, commute and job environment could play a significant role for employees when deciding to saty with the organization.
 
 # Objective
 1. Explore data to see what variables could be significant in predicting attrition.
@@ -50,13 +52,23 @@ summary(HR_data)
 ![attrition summary2](https://user-images.githubusercontent.com/46609482/68715093-0f492680-0556-11ea-8717-ccdd0ea4c52c.PNG)
 
 # Distribution of Attrition among variables
-
+__By Age__
 ```r
-# By distance from home
+ggplot(HR_data, aes(x=Age, fill = Attrition, color = Attrition)) + geom_histogram(binwidth=10, alpha=0.5)
+```
+
+![attrition by age](https://user-images.githubusercontent.com/46609482/68807690-1f780900-061d-11ea-8486-2c62e08826f4.PNG)
+__By distance from home__
+```r
+# visualization
 ggplot(HR_data, aes(x=Attrition, y=DistanceFromHome, fill=Attrition)) + 
   geom_boxplot()+ stat_summary(fun.y=mean, geom="point", shape=23, size=4) +
     stat_summary(fun.y=mean, colour="darkred", geom="text", vjust=-0.9, aes( label=round(..y.., digits=1))) +
       stat_summary(fun.y=median, colour="darkred", geom="text", vjust=1.2, aes( label=round(..y.., digits=1))) +
-        ggtitle("Boxplot of 'Distance From Home' by Attrition")
+        ggtitle("   Boxplot of 'Distance From Home' by Attrition")
 ```
 ![attrition distance boxplot](https://user-images.githubusercontent.com/46609482/68715329-9a2a2100-0556-11ea-92de-3b4544a7eec7.PNG)Diamond = *Mean*; Line = *Median*
+
+Average distance from home for attrition is slightly higher. Notice attrition could be voluntary or involuntary which includes retirees too.
+
+__By income__
