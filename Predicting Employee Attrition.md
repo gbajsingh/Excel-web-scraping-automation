@@ -52,8 +52,10 @@ summary(HR_data)
 ![attrition summary2](https://user-images.githubusercontent.com/46609482/68715093-0f492680-0556-11ea-8717-ccdd0ea4c52c.PNG)
 
 # Distribution of Attrition among variables
+
 __By Age__
 ```r
+# visualization
 ggplot(HR_data, aes(x=Age, fill = Attrition, color = Attrition)) + geom_histogram(binwidth=10, alpha=0.5)
 ```
 ![attrition by age](https://user-images.githubusercontent.com/46609482/68807690-1f780900-061d-11ea-8486-2c62e08826f4.PNG)
@@ -75,3 +77,16 @@ ggplot(HR_data, aes(x=Attrition, y=DistanceFromHome, fill=Attrition)) +
 Average distance from home for attrition is slightly higher.
 
 __By income__
+
+```r
+# visualization by daily rate
+ggplot(HR_data, aes(x=DailyRate, fill = Attrition, color = Attrition)) + geom_histogram(binwidth=100,alpha=0.5)
+
+ggplot(HR_data, aes(x=Attrition, y=DailyRate, fill=Attrition)) + 
+  geom_boxplot()+ stat_summary(fun.y=mean, geom="point", shape=23, size=4) +
+  stat_summary(fun.y=mean, colour="darkred", geom="text", vjust=-0.9, aes( label=round(..y.., digits=1))) +
+  stat_summary(fun.y=median, colour="darkred", geom="text", vjust=1.2, aes( label=round(..y.., digits=1)))
+```
+![attrition by dailyrate](https://user-images.githubusercontent.com/46609482/68811098-a8df0980-0624-11ea-9363-de3f1d33eb0f.PNG)![attrition by daily rate boxplot](https://user-images.githubusercontent.com/46609482/68810852-1b031e80-0624-11ea-9034-6d471eb54fee.PNG)
+
+
