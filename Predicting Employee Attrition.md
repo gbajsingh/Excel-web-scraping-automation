@@ -87,6 +87,6 @@ ggplot(HR_data, aes(x=Attrition, y=DailyRate, fill=Attrition)) +
   stat_summary(fun.y=mean, colour="darkred", geom="text", vjust=-0.9, aes( label=round(..y.., digits=1))) +
   stat_summary(fun.y=median, colour="darkred", geom="text", vjust=1.2, aes( label=round(..y.., digits=1)))
 ```
-![attrition by dailyrate](https://user-images.githubusercontent.com/46609482/68811098-a8df0980-0624-11ea-9363-de3f1d33eb0f.PNG)![Attrition by dailyrate boxplot](https://user-images.githubusercontent.com/46609482/68811233-04a99280-0625-11ea-9d59-a956099ef839.PNG)
+![attrition by dailyrate](https://user-images.githubusercontent.com/46609482/68811423-77b30900-0625-11ea-8fc1-dca9078bd18b.PNG)![Attrition by dailyrate boxplot](https://user-images.githubusercontent.com/46609482/68811233-04a99280-0625-11ea-9d59-a956099ef839.PNG)
 
 
