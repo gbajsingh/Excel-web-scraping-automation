@@ -89,4 +89,8 @@ ggplot(HR_data, aes(x=Attrition, y=DailyRate, fill=Attrition)) +
 ```
 ![attrition by dailyrate](https://user-images.githubusercontent.com/46609482/68811423-77b30900-0625-11ea-8fc1-dca9078bd18b.PNG)      ![attrition by dailyrate boxplot](https://user-images.githubusercontent.com/46609482/68811618-ee500680-0625-11ea-8004-f73e331cc4fa.PNG)
 
+Attrition is slightly higher for lower daily rates
 
+```r
+# visualization by hourly rate
+```
