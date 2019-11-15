@@ -1,5 +1,5 @@
 # Introduction
-Employee attrition is basically a employee turnover rate of an organization. Attrition can be caused by both voluntary(for e.g. retirement, self-quit) or involuntary (for e.g. layoff) reason. Nonethless, identifying factors that leads to attrition can help an organization to take prevention measures. For example, a company would rather keep its high performance employees than to train and hire new ones.
+Employee attrition is basically a employee turnover rate of an organization. Attrition can be caused by both voluntary(for e.g. retirement, self-quit) or involuntary (for e.g. layoff) reason. Nonethless, identifying factors that leads to attrition can help an organization to take preventive measures. For example, a company would rather keep its high performance employees than to train and hire new ones.
 
 Age seems like a reasonable factor for the retirement related attrition. Other variables such as income, commute and job satisfaction could play a significant role for employees when deciding to saty with the organization.
 
