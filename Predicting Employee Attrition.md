@@ -89,8 +89,16 @@ ggplot(HR_data, aes(x=Attrition, y=DailyRate, fill=Attrition)) +
 ```
 ![attrition by dailyrate](https://user-images.githubusercontent.com/46609482/68811423-77b30900-0625-11ea-8fc1-dca9078bd18b.PNG)      ![attrition by dailyrate boxplot](https://user-images.githubusercontent.com/46609482/68811618-ee500680-0625-11ea-8004-f73e331cc4fa.PNG)
 
-Attrition is slightly higher for lower daily rates
+Distribution of employees with attrition among daily rate seems proportional to employess without attrition. The average daily rate of employees with attrition is slightly lower than employees without attrition.
 
 ```r
 # visualization by hourly rate
+ggplot(HR_data, aes(x=HourlyRate, fill = Attrition, color = Attrition)) + geom_histogram(binwidth=10,alpha=0.5)
+
+ggplot(HR_data, aes(x=Attrition, y=HourlyRate, fill=Attrition)) + 
+  geom_boxplot()+ stat_summary(fun.y=mean, geom="point", shape=23, size=4) +
+  stat_summary(fun.y=mean, colour="darkred", geom="text", vjust=-0.9, aes( label=round(..y.., digits=1))) +
+  stat_summary(fun.y=median, colour="darkred", geom="text", vjust=1.2, aes( label=round(..y.., digits=1)))
 ```
+![attrition hourly rate](https://user-images.githubusercontent.com/46609482/69196151-82b4e000-0ae2-11ea-8ce9-53c71494f284.PNG)![attrition hourly rate boxplot](https://user-images.githubusercontent.com/46609482/69196228-b42dab80-0ae2-11ea-8e38-9e77afb96bd0.PNG)
+
