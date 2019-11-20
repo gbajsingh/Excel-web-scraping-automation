@@ -60,7 +60,7 @@ ggplot(HR_data, aes(x=Age, fill = Attrition, color = Attrition)) + geom_histogra
 ```
 ![attrition by age](https://user-images.githubusercontent.com/46609482/68807690-1f780900-061d-11ea-8486-2c62e08826f4.PNG)
 
-Count of employess with attrition is directly proportional to employees without attrition. Also, most of the data is consist of employees that ages between 20 to 50 years old which means most of the attrition is not caused by retirement.
+Distribution of employess with attrition across age seems proportional to the distribution of employees without attrition. Also, most of the data is consist of employees that ages between 20 to 50 years old which means most of the attrition is not caused by retirement.
 
 
 __By distance from home__
@@ -74,7 +74,7 @@ ggplot(HR_data, aes(x=Attrition, y=DistanceFromHome, fill=Attrition)) +
 ```
 ![attrition distance boxplot](https://user-images.githubusercontent.com/46609482/68715329-9a2a2100-0556-11ea-92de-3b4544a7eec7.PNG)Diamond = *Mean*; Line = *Median*
 
-Average distance from home for attrition is slightly higher.
+Average distance from home for employees with attrition is slightly higher. This could be a factor for employess when deciding to stay with organization.
 
 __By income__
 
