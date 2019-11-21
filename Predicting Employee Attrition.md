@@ -3,7 +3,7 @@ Employee attrition is basically a employee turnover rate of an organization. Att
 
 Where older age seems to be a reasonable factor for the retirement related attrition, other variables such as income, commute distance and job satisfaction could play a significant role for employees when deciding to stay with organization.
 
-Let's see what causes employees to quit. Are there decisions mostly driven by income, environment or some other unknown variable?
+Let's see what causes employees to quit. Is employee decision mostly driven by income, environment or some other unknown variable?
 
 # Objective
 1. Explore data to see what variables could be significant in predicting attrition.
