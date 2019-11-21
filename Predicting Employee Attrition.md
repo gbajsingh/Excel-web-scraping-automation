@@ -97,7 +97,7 @@ ggplot(HR_data, aes(x=Attrition, y=DailyRate, fill=Attrition)) +
 
 1. Left chart shows the distribution of employees with attrition among daily rate is slightly skewed to the left meaning the count of employees with attrition is higher towards lower daily rate. 
 2. Right chart confirms the average daily rate of employees with attrition is indeed slightly lower than employees without attrition.
-3. Since daily rate depends on number of hours worked a day, monthly income should be more imptortant in representing attrition by earnings than hourly rate or daily rate. Let's see daily rate and monthly income to confirm our hypothesis.
+3. Since daily rate depends on number of hours worked a day, monthly income should be more imptortant in representing attrition by earnings than hourly rate or daily rate. Next let's see attrition by daily rate and monthly income to confirm.
 
 ```r
 # visualization by hourly rate
@@ -129,3 +129,4 @@ ggplot(HR_data, aes(x=Attrition, y=MonthlyIncome, fill=Attrition)) +
 1. Left chart shows the distribution of employees with attrition is skewed to right more than the distribution of employees without attrition. Meaning higher the income less the attrition occurs.
 2. Right chart confirms the average monthly income of employees with attrition is indeed significantly lower than the employees without attrition.
 3. Large monthly income difference shows that attrition occurance could be relative to overtime/hours worked. Meaning employees favor working more hours and hence earning more income.
+
