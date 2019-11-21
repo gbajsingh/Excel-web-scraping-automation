@@ -89,7 +89,8 @@ ggplot(HR_data, aes(x=Attrition, y=DailyRate, fill=Attrition)) +
 ```
 ![attrition by dailyrate](https://user-images.githubusercontent.com/46609482/68811423-77b30900-0625-11ea-8fc1-dca9078bd18b.PNG)      ![attrition by dailyrate boxplot](https://user-images.githubusercontent.com/46609482/68811618-ee500680-0625-11ea-8004-f73e331cc4fa.PNG)
 
-The chart on the left shows the distribution of employees with attrition among daily rate is slightly skewed to the left meaning the count of employees with attrition is higher towards lower daily rate. The chart on the right confirms that the average daily rate of employees with attrition is indeed slightly lower than employees without attrition.
+1. The left chart shows the distribution of employees with attrition among daily rate is slightly skewed to the left meaning the count of employees with attrition is higher towards lower daily rate. 
+2. The right chart confirms the average daily rate of employees with attrition is indeed slightly lower than employees without attrition.
 
 ```r
 # visualization by hourly rate
@@ -102,5 +103,19 @@ ggplot(HR_data, aes(x=Attrition, y=HourlyRate, fill=Attrition)) +
 ```
 ![attrition hourly rate](https://user-images.githubusercontent.com/46609482/69196151-82b4e000-0ae2-11ea-8ce9-53c71494f284.PNG)![attrition hourly rate boxplot](https://user-images.githubusercontent.com/46609482/69196228-b42dab80-0ae2-11ea-8e38-9e77afb96bd0.PNG)
 
-The chart on the left shows the distribution of employees with attrition among hourly rate is proportional to the distribution of employee without attrition. The chart on the right confirms that the average hourly rate of employees with attrition is indeed approximately same as the employees without attrition.
+1. The left charts shows the distribution of employees with attrition among hourly rate is proportional to the distribution of employee without attrition.
+2. The right chart confirms the average hourly rate of employees with attrition is indeed approximately same as the employees without attrition.
 
+```r
+# visualization by Monthly Income
+ggplot(HR_data, aes(x=MonthlyIncome, fill = Attrition, color = Attrition)) + geom_histogram(binwidth=1000,alpha=0.5)
+
+ggplot(HR_data, aes(x=Attrition, y=MonthlyIncome, fill=Attrition)) + 
+  geom_boxplot()+ stat_summary(fun.y=mean, geom="point", shape=23, size=4) +
+  stat_summary(fun.y=mean, colour="darkred", geom="text", vjust=-0.9, aes( label=round(..y.., digits=1))) +
+  stat_summary(fun.y=median, colour="darkred", geom="text", vjust=1.2, aes( label=round(..y.., digits=1)))
+```
+![attrition by monthlyIncome](https://user-images.githubusercontent.com/46609482/69382523-1cf45f80-0c6c-11ea-9d8e-276fb79d2a5b.PNG)
+
+1. The left chart shows the distribution of employees with attrition is skewed to right more than the distribution of employees without attrition. Meaning higher the income less the attrition occurs.
+2. The right chart confirms the average monthly income of employees with attrition is indeed lower than the employees without attrition.
