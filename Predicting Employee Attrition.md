@@ -145,12 +145,12 @@ ggplot(HR_data, aes(x=Attrition, y=MonthlyIncome, fill=Attrition)) +
 ggplot(HR_data, aes(x=factor(JobSatisfaction), fill = Attrition, color = Attrition)) + geom_bar() +
   geom_text(aes(label=..count..),stat="count",position=position_stack(0.5), color="blue")
 
-# calculating Job-satisfaction proportion
+# calculating attrition proportion by each Job satisfaction level
 percentData <- HR_data %>% group_by(JobSatisfaction) %>% count(Attrition) %>%
   mutate(ratio=scales::percent(n/sum(n)))
   
-# Job-satisfaction proportion visualization
+# proportion visualization
 ggplot(HR_data, aes(x=factor(JobSatisfaction), fill = Attrition, color = Attrition)) + geom_bar(position="fill") +
   geom_text(data=percentData, aes(y=n,label=ratio), position=position_fill(vjust=0.5),color="blue")
 ```
-![attrition by jobsatisfaction](https://user-images.githubusercontent.com/46609482/69504258-06e9d780-0ed6-11ea-9d77-d4f044435432.PNG)![attrition by jobsatisfaction proportion](https://user-images.githubusercontent.com/46609482/69504278-3a2c6680-0ed6-11ea-8d3f-d2e1e28832d0.PNG)
+![attrition by jobsatisfaction](https://user-images.githubusercontent.com/46609482/69504873-38b16d00-0edb-11ea-82af-0ed582f145b0.PNG)![attrition by jobsatisfaction prop](https://user-images.githubusercontent.com/46609482/69504878-44049880-0edb-11ea-9038-cc150bbba2b8.PNG)
