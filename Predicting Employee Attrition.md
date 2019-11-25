@@ -6,7 +6,6 @@ Where older age seems to be a reasonable factor for the retirement related attri
 Let's see what causes employees to quit. Is employee's decision mostly driven by income, environment or some other unknown variable?\
 \
 \
-Line two
 # Objective
 1. Explore data to see what variables could be significant in predicting attrition.
 2. Implement statistical models to accurately predict the attrition.
