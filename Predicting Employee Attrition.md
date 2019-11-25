@@ -58,15 +58,17 @@ __WorkLifeBalance__: 1 'Bad' 2 'Good' 3 'Better' 4 'Best'
 
 # Distribution of Attrition among other variables
 
+
 __By Age__
 ```r
-# visualization by age
+# visualization
 ggplot(HR_data, aes(x=Age, fill = Attrition, color = Attrition)) + geom_histogram(binwidth=10, alpha=0.5)
 ```
 ![attrition by age](https://user-images.githubusercontent.com/46609482/68807690-1f780900-061d-11ea-8486-2c62e08826f4.PNG)
 
 1. Distribution of employess with attrition across age seems proportional to the distribution of employees without attrition.
 2. Since this dataset is mostly consist of employees aging between 20 to 50 years and attrition by retirement is most likely to happen for older age, it is safe to assume the cause of attrition is other than retirement for most of the observations in this dataset.
+
 
 
 __By distance from home__
@@ -82,10 +84,12 @@ ggplot(HR_data, aes(x=Attrition, y=DistanceFromHome, fill=Attrition)) +
 
 Average distance from home for employees with attrition is slightly higher. This could be a factor for employess when deciding to stay with organization.
 
+
+
 __By income/earning__
 
 ```r
-# visualization by daily rate
+# Daily rate visualization
 ggplot(HR_data, aes(x=DailyRate, fill = Attrition, color = Attrition)) + geom_histogram(binwidth=100,alpha=0.5)
 
 ggplot(HR_data, aes(x=Attrition, y=DailyRate, fill=Attrition)) + 
@@ -97,10 +101,10 @@ ggplot(HR_data, aes(x=Attrition, y=DailyRate, fill=Attrition)) +
 
 1. Left chart shows the distribution of employees with attrition among daily rate is slightly skewed to the left meaning the count of employees with attrition is higher towards lower daily rate. 
 2. Right chart confirms the average daily rate of employees with attrition is indeed slightly lower than employees without attrition.
-3. Since daily rate depends on number of hours worked a day, monthly income should be more imptortant in representing attrition by earnings than hourly rate or daily rate. Next let's see attrition by daily rate and monthly income to confirm.
+3. Since daily rate depends on number of hours worked a day, monthly income should be more imptortant in representing attrition by earnings than hourly rate or daily rate. Next let's see attrition by hourly rate and monthly income to confirm.
 
 ```r
-# visualization by hourly rate
+# Hourly rate visualization
 ggplot(HR_data, aes(x=HourlyRate, fill = Attrition, color = Attrition)) + geom_histogram(binwidth=10,alpha=0.5)
 
 ggplot(HR_data, aes(x=Attrition, y=HourlyRate, fill=Attrition)) + 
@@ -112,10 +116,10 @@ ggplot(HR_data, aes(x=Attrition, y=HourlyRate, fill=Attrition)) +
 
 1. Left charts shows the distribution of employees with attrition among hourly rate is approximately proportional to the distribution of employee without attrition.
 2. Right chart confirms the average hourly rate of employees with attrition is indeed approximately same as the employees without attrition.
-3. Same average hourly rate among both type of employees(attrition & without attrition) justifies that the attrition occurance is not relevant to hourly rate rather to the amount of hours worked. To see that let's take a look at attrition by monthly income next.
+3. Same average hourly rate among both type of employees(attrition & without attrition) justifies that the attrition occurance is not relevant to hourly rate rather to the amount of hours worked. Next let's see attrition by monthly income.
 
 ```r
-# visualization by Monthly Income
+# Monthly Income Visualization
 ggplot(HR_data, aes(x=MonthlyIncome, fill = Attrition, color = Attrition)) + geom_histogram(binwidth=1000,alpha=0.5)
 
 ggplot(HR_data, aes(x=Attrition, y=MonthlyIncome, fill=Attrition)) + 
@@ -130,3 +134,21 @@ ggplot(HR_data, aes(x=Attrition, y=MonthlyIncome, fill=Attrition)) +
 2. Right chart confirms the average monthly income of employees with attrition is indeed significantly lower than the employees without attrition.
 3. Large monthly income difference shows that attrition occurance could be relative to overtime/hours worked. Meaning employees favor working more hours and hence earning more income.
 
+
+
+__By Environment__
+
+```r
+# Job-satisfaction visualization
+ggplot(HR_data, aes(x=factor(JobSatisfaction), fill = Attrition, color = Attrition)) + geom_bar() +
+  geom_text(aes(label=..count..),stat="count",position=position_stack(0.5), color="blue")
+
+# calculating Job-satisfaction proportion
+percentData <- HR_data %>% group_by(JobSatisfaction) %>% count(Attrition) %>%
+  mutate(ratio=scales::percent(n/sum(n)))
+  
+# Job-satisfaction proportion visualization
+ggplot(HR_data, aes(x=factor(JobSatisfaction), fill = Attrition, color = Attrition)) + geom_bar(position="fill") +
+  geom_text(data=percentData, aes(y=n,label=ratio), position=position_fill(vjust=0.5),color="blue")
+```
+![attrition by jobsatisfaction](https://user-images.githubusercontent.com/46609482/69504258-06e9d780-0ed6-11ea-9d77-d4f044435432.PNG)![attrition by jobsatisfaction proportion](https://user-images.githubusercontent.com/46609482/69504278-3a2c6680-0ed6-11ea-8d3f-d2e1e28832d0.PNG)
