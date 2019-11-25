@@ -15,6 +15,9 @@ Let's see what causes employees to quit. Is employee's decision mostly driven by
 R with required libraries
 ```r
 library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(magrittr)
 ```
 <br><br>
 <br><br> 
