@@ -78,7 +78,7 @@ ggplot(HR_data, aes(x=Age, fill = Attrition, color = Attrition)) + geom_histogra
 2. Since this dataset is mostly consist of employees aging between 20 to 50 years and attrition by retirement is most likely to happen for older age, it is safe to assume the cause of attrition is other than retirement for most of the observations in this dataset.
 <br><br>
 <br><br>
-__By distance from home__
+__By Distance from Home__
 ```r
 # visualization
 ggplot(HR_data, aes(x=Attrition, y=DistanceFromHome, fill=Attrition)) + 
