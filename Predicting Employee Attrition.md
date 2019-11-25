@@ -5,21 +5,18 @@ Where older age seems to be a reasonable factor for the retirement related attri
 
 Let's see what causes employees to quit. Is employee's decision mostly driven by income, environment or some other unknown variable?
 <br><br>
-<br><br> 
-<br><br>  
+<br><br>   
 # Objective
 1. Explore data to see what variables could be significant in predicting attrition.
 2. Implement statistical models to accurately predict the attrition.
 <br><br>
-<br><br> 
-<br><br> 
+<br><br>  
 # Statistical tools
 R with required libraries
 ```r
 library(ggplot2)
 ```
 <br><br>
-<br><br> 
 <br><br> 
 # Data
 ```r
@@ -63,11 +60,9 @@ __RelationshipSatisfaction__: 1 'Low' 2 'Medium' 3 'High' 4 'Very High'
 __WorkLifeBalance__: 1 'Bad' 2 'Good' 3 'Better' 4 'Best'
 <br><br>
 <br><br> 
-<br><br> 
 # Distribution of Attrition among other variables
-<br><br>
 <br><br> 
-__By Age__
+## By Age
 ```r
 # visualization
 ggplot(HR_data, aes(x=Age, fill = Attrition, color = Attrition)) + geom_histogram(binwidth=10, alpha=0.5)
@@ -77,8 +72,8 @@ ggplot(HR_data, aes(x=Age, fill = Attrition, color = Attrition)) + geom_histogra
 1. Distribution of employess with attrition across age seems proportional to the distribution of employees without attrition.
 2. Since this dataset is mostly consist of employees aging between 20 to 50 years and attrition by retirement is most likely to happen for older age, it is safe to assume the cause of attrition is other than retirement for most of the observations in this dataset.
 <br><br>
-<br><br>
-__By Distance from Home__
+
+## By Distance from Home
 ```r
 # visualization
 ggplot(HR_data, aes(x=Attrition, y=DistanceFromHome, fill=Attrition)) + 
@@ -91,8 +86,7 @@ ggplot(HR_data, aes(x=Attrition, y=DistanceFromHome, fill=Attrition)) +
 
 Average distance from home for employees with attrition is slightly higher. This could be a factor for employess when deciding to stay with organization.
 <br><br>
-<br><br>
-__By income/earning__
+## By income/earning
 
 ```r
 # Daily rate visualization
@@ -140,8 +134,8 @@ ggplot(HR_data, aes(x=Attrition, y=MonthlyIncome, fill=Attrition)) +
 2. Right chart confirms the average monthly income of employees with attrition is indeed significantly lower than the employees without attrition.
 3. Large monthly income difference shows that attrition occurance could be relative to overtime/hours worked. Meaning employees favor working more hours and hence earning more income.
 <br><br>
-<br><br>
-__By Environment__
+
+## By Environment
 
 ```r
 # Job-satisfaction visualization
