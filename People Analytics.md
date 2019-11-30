@@ -1,5 +1,6 @@
 # Introduction
 People analytics are implemented to increase business outcomes such as revenue growth, ROIC, capital efficency and future value by adopting processes or strategies that solve business problems from human capital's end (See Figure: Human Capital Value Profiler Framework). On the basis of level 1 & 2 business issue one can address the level 3 & 4 issue. Otherwise, there’s not much point in trying to address Level 3 & 4 people issues if they aren’t causing any business problems.
+
 ![human capital framework](https://user-images.githubusercontent.com/46609482/69906847-b6afc100-137e-11ea-8829-b4b8c60d39e3.PNG)
 
 Employee attrition is basically a employee turnover rate of an organization. Attrition can be caused by both voluntary(e.g. retirement, self-quit) or involuntary (e.g. layoff) reason. Nonethless, identifying factors that leads to attrition can help an organization to take preventive measures. For example, a company would rather keep its high performance employees than to train and hire new ones.
