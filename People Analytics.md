@@ -7,7 +7,7 @@ Let's see what causes employees to quit. Is employee's decision mostly driven by
 <br><br>
 <br><br>   
 # Objective
-1. Explore data to see what variables could be significant in predicting attrition.
+1. Explore data to see what variables could be significant in predicting unwanted attrition.
 2. Implement statistical models to accurately predict the attrition.
 <br><br>
 <br><br>  
