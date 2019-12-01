@@ -9,7 +9,7 @@ __Problem__: Business wants to increase revenue growth(Level 1)
 
 __Strategy__: Determine the need of improvement in company's workforce productivty and then address issues in workforce capabilities(e.g. automating low-level repetitive tasks) and finally, use employee-centric training to deliver these. This could overcome the business problem in level 1.
 
-*Revenue Growth(Level 1) => Productivity*(Level 2) => Workforce Performance & Agility(Level 3) => Learning & Development(Level 4)*
+*Revenue Growth(Level 1) => Productivity(Level 2) => Workforce Performance & Agility(Level 3) => Learning & Development(Level 4)*
 <br><br>
 <br><br>
 __Problem__: Business wants to enhance innovation(Level 2)
