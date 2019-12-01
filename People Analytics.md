@@ -5,13 +5,17 @@ People analytics are implemented to increase business outcomes such as revenue g
 
 Lets consider few scenarios: 
 
-__Business wants to increase revenue growth(Level 1)__: Determining the need of improvement in company's workforce productivty and then addressing issues in workforce capabilities(e.g. automating low-level repetitive tasks) and finally, using employee-centric training to deliver these could overcome the business problem in level 1.
+__Problem: Business wants to increase revenue growth(Level 1)__
+
+__Strategy__: Determine the need of improvement in company's workforce productivty and then address issues in workforce capabilities(e.g. automating low-level repetitive tasks) and finally, use employee-centric training to deliver these. This could overcome the business problem in level 1.
 
 To follow the steps in human capital framework figure: 
 
 *Revenue Growth*(Level 1) addressed by *Productivity*(Level 2) adressed by *Workforce Performance & Agility*(Level 3) addressed by *Learning & Development*(Level 4)
 
-__Business wants to enhance innovation(Level 2)__: Identifying where their company’s corporate culture is inhibiting competitive advantage and then designing interventions to remedy these issues.
+__Problem: Business wants to enhance innovation(Level 2)__
+
+__Strategy__: Identify where their company’s corporate culture is inhibiting competitive advantage and then design interventions to remedy these issues.
 
 *Innovation*(Level 2) addressed by *Cultural Alignment*(Level 3) addressed by *Learning & Development*(Level 4)
 
