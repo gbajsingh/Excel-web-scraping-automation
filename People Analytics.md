@@ -1,9 +1,15 @@
 # Introduction and background
-People analytics are implemented to increase business outcomes such as revenue growth, ROIC, capital efficency and future value by adopting processes or strategies that solve business problems from human capital's end (See Figure: Human Capital Value Profiler Framework). On the basis of level 1 & 2 business issue one can address the level 3 & 4 people issue. Otherwise, there’s not much point in trying to address Level 3 & 4 people issues if they aren’t causing any business problems.
+People analytics are implemented to increase business outcomes such as revenue growth, ROIC, capital efficency and future value by adopting processes or strategies that solve business problems from human capital's end (See Figure: Human Capital Value Profiler Framework). On the basis of level 1 & 2 business issue one can address the level 3 & 4 people issue. Otherwise, there’s not much point in trying to address level 3 & 4 people issues if they aren’t causing any business problems.
 
 ![human capital framework](https://user-images.githubusercontent.com/46609482/69906847-b6afc100-137e-11ea-8829-b4b8c60d39e3.PNG)
 
-If business is facing capital effieciency issue(level 1) one can can increase productivity(level 2)
+Lets consider few scenarios: 
+__Business wants to increase revenue growth(level 1)__: Determining the need of improvement in company's workforce productivty and then addressing issues in workforce capabilities (e.g. automating low-level repetitive tasks) and finally, using employee-centric training to deliver these could overcome the business problem(i.e. revenue growth) in level 1.
+
+To follow the steps in human capital framework figure. Business problem *Revenue Growth*(level 1) addressed by *Productivity*(level 2) adressed by *Workforce Performance & Agility*(level 3) addressed by *Learning & Development*(level 4).
+
+__Business wants to enhance innovation(level 2)__: Identifying where their company’s corporate culture is inhibiting competitive advantage and then designing interventions to remedy these issues. 
+
 
 Employee attrition is basically a employee turnover rate of an organization. Attrition can be caused by both voluntary(e.g. retirement, self-quit) or involuntary (e.g. layoff) reason. Nonethless, identifying factors that leads to attrition can help an organization to take preventive measures. For example, a company would rather keep its high performance employees than to train and hire new ones.
 
