@@ -11,14 +11,19 @@ __Strategy__: Determine the need of improvement in company's workforce productiv
 
 To follow the steps in human capital framework figure: 
 
-*Revenue Growth*(Level 1) addressed by *Productivity*(Level 2) adressed by *Workforce Performance & Agility*(Level 3) addressed by *Learning & Development*(Level 4)
+*Revenue Growth*(Level 1) => *Productivity*(Level 2) => *Workforce Performance & Agility*(Level 3) => *Learning & Development*(Level 4)
 
 __Problem__: Business wants to enhance innovation(Level 2)
 
 __Strategy__: Identify where their company’s corporate culture is inhibiting competitive advantage and then design interventions to remedy these issues.
 
-*Innovation*(Level 2) addressed by *Cultural Alignment*(Level 3) addressed by *Learning & Development*(Level 4)
+*Innovation*(Level 2) => *Cultural Alignment*(Level 3) => *Learning & Development*(Level 4)
 
+Now for the purpose of this project we want to address the issue of capital effiecinecy.
+
+__Problem__: Increase capital efficiency(Level 1)
+
+__Strategy__: Determine
 
 Employee attrition is basically a employee turnover rate of an organization. Attrition can be caused by both voluntary(e.g. retirement, self-quit) or involuntary (e.g. layoff) reason. Nonethless, identifying factors that leads to attrition can help an organization to take preventive measures. For example, a company would rather keep its high performance employees than to train and hire new ones.
 
