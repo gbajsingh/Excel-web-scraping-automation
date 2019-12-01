@@ -1,4 +1,4 @@
-# Introduction and background
+# Background
 People analytics are implemented to increase business outcomes such as revenue growth, ROIC, capital efficency and future value by adopting processes or strategies that solve business problems from human capital's end (See Figure: Human Capital Value Profiler Framework). On the basis of level 1 & 2 business issue one can address the level 3 & 4 people issue. Otherwise, there’s not much point in trying to address level 3 & 4 people issues if they aren’t causing any business problems.
 
 ![human capital framework](https://user-images.githubusercontent.com/46609482/69906847-b6afc100-137e-11ea-8829-b4b8c60d39e3.PNG)
@@ -11,14 +11,16 @@ __Strategy__: Determine the need of improvement in company's workforce productiv
 
 To follow the steps in human capital framework figure: 
 
-*Revenue Growth*(Level 1) => *Productivity*(Level 2) => *Workforce Performance & Agility*(Level 3) => *Learning & Development*(Level 4)
+*Revenue Growth(Level 1) => Productivity*(Level 2) => Workforce Performance & Agility(Level 3) => Learning & Development(Level 4)*
 
 __Problem__: Business wants to enhance innovation(Level 2)
 
 __Strategy__: Identify where their company’s corporate culture is inhibiting competitive advantage and then design interventions to remedy these issues.
 
-*Innovation*(Level 2) => *Cultural Alignment*(Level 3) => *Learning & Development*(Level 4)
-
+*Innovation(Level 2) => Cultural Alignment(Level 3) => Learning & Development(Level 4)*
+<br><br>
+<br><br>
+# Objective
 Now for the purpose of this project we want to address the issue of capital effiecinecy.
 
 __Problem__: Increase capital efficiency(Level 1)
