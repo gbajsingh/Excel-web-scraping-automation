@@ -18,6 +18,8 @@ __Strategy__: Identify where their company’s corporate culture is inhibiting c
 
 *Innovation(Level 2) => Cultural Alignment(Level 3) => Learning & Development(Level 4)*
 <br><br>
+Reference: https://www.hrzone.com/perform/business/people-analytics-why-some-companies-are-making-a-fortune-while-others-are-losing
+<br><br>
 <br><br>
 # Objective
 Now for the purpose of this project we want to address the issue of capital effiecinecy.
