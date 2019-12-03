@@ -3,18 +3,23 @@ People analytics are implemented to increase business outcomes such as revenue g
 
 ![human capital framework](https://user-images.githubusercontent.com/46609482/69906847-b6afc100-137e-11ea-8829-b4b8c60d39e3.PNG)
 
-Lets consider few scenarios: 
+Lets consider few simple scenarios: 
 
 __Problem__: Business wants to increase revenue growth(Level 1)
 
-__Strategy__: Determine the need of improvement in company's workforce productivty and then address issues in workforce capabilities(e.g. automating low-level repetitive tasks) and finally, use employee-centric training to deliver these. This could overcome the business problem in level 1.
+__Strategy__: 
+1. Determine the need of improvement in company's workforce productivty
+2. Address issues in workforce capabilities(e.g. automating low-level repetitive tasks)
+3. Finally, use employee-centric training to deliver these.
 
 *Revenue Growth(Level 1) => Productivity(Level 2) => Workforce Performance & Agility(Level 3) => Learning & Development(Level 4)*
 <br><br>
 <br><br>
 __Problem__: Business wants to enhance innovation(Level 2)
 
-__Strategy__: Identify where their company’s corporate culture is inhibiting competitive advantage and then design interventions to remedy these issues.
+__Strategy__: 
+1. Identify where their company’s corporate culture is inhibiting competitive advantage
+2. Design interventions to remedy these issues.
 
 *Innovation(Level 2) => Cultural Alignment(Level 3) => Learning & Development(Level 4)*
 <br><br>
@@ -22,26 +27,24 @@ Reference: https://www.hrzone.com/perform/business/people-analytics-why-some-com
 <br><br>
 <br><br>
 # Objective
-Now for the purpose of this project we want to address the issue of capital effiecinecy.
+Now for the purpose of this project we want to maximise returns from invested capital by finding where to invest to increase capital efficieny.
 
-__Problem__: Increase capital efficiency(Level 1)
+__Problem__: Where to invest capital to increase capital efficiency and therfore maximise return?
 
-__Strategy__: Determine
-
-Employee attrition is basically a employee turnover rate of an organization. Attrition can be caused by both voluntary(e.g. retirement, self-quit) or involuntary (e.g. layoff) reason. Nonethless, identifying factors that leads to attrition can help an organization to take preventive measures. For example, a company would rather keep its high performance employees than to train and hire new ones.
-
-Where older age seems to be a reasonable factor for the retirement related attrition, other variables such as income, commute distance and job satisfaction could play a significant role for employees when deciding to stay with organization.
-
-Let's see what causes employees to quit. Is employee's decision mostly driven by income, environment or some other unknown variable?
+__Strategy__: 
+1. Address human capital efficiency issue by retaining talented employees(reduce flight risk).
+2. Predict unwanted attrition by leveraging data science process/retention modeling.
+3. Manage talent by investing capital in incentivizing employees at flight risk and build employee relations.
 <br><br>
 <br><br>   
-# Objective
-1. Explore data to see what variables could be significant in predicting unwanted attrition.
-2. Implement statistical models to accurately predict the attrition.
+# Data Science Process
+1. Retreive/collect data from employee survey and HR to analyze.
+2. Perform exploratory analysis to see what variables could be significant in predicting unwanted attrition.
+3. Implement and test statistical models to accurately predict the attrition.
 <br><br>
 <br><br>  
 # Statistical tools
-R with required libraries
+R  and required libraries
 ```r
 library(ggplot2)
 library(dplyr)
