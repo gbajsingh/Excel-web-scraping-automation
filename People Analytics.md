@@ -29,7 +29,7 @@ Reference: https://www.hrzone.com/perform/business/people-analytics-why-some-com
 # Objective
 Now for the purpose of this project we want to maximise returns from invested capital by finding where to invest to increase capital efficieny.
 
-__Problem__: Where to invest capital to increase capital efficiency and therfore maximise return?
+__Problem__: Where to invest capital to increase capital efficiency and therfore maximize return?
 
 __Strategy__: 
 1. Address human capital efficiency issue by retaining talented employees(reduce flight risk).
@@ -94,7 +94,15 @@ __RelationshipSatisfaction__: 1 'Low' 2 'Medium' 3 'High' 4 'Very High'
 
 __WorkLifeBalance__: 1 'Bad' 2 'Good' 3 'Better' 4 'Best'
 <br><br>
-<br><br> 
+<br><br>
+# Background on Attrition(predicting variable)
+Attrition can be caused by both voluntary(e.g. retirement, quit) or involuntary (e.g. layoff) reason. Nonethless, identifying factors that leads to unwanted attrition can help an organization to take preventive measures.
+
+Older age seems to be a reasonable factor for the retirement related attrition, other variables such as income, commute distance and job satisfaction could play a significant role for employees when deciding to stay with organization.
+
+Let's see what causes employees to quit. Is employee's decision mostly driven by income, environment or some other unknown variable?
+<br><br>
+<br><br>
 # Distribution of Attrition among other variables
 <br><br> 
 ## By Age
