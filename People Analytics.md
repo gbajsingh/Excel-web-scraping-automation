@@ -1,5 +1,5 @@
 # Background
-People analytics are implemented to increase business outcomes such as revenue growth, ROIC, capital efficency and future value by adopting processes or strategies that solve business problems from human capital's end (See Figure: Human Capital Value Profiler Framework). On the basis of level 1 & 2 business issue one can address the level 3 & 4 people issue. Otherwise, there’s not much point in trying to address level 3 & 4 people issues if they aren’t causing any business problems.
+People analytics are implemented to increase business outcomes such as revenue growth, ROIC, capital efficency and future value by adopting processes or strategies that solve business problems from human capital's end(See Figure: Human Capital Value Profiler Framework). On the basis of level 1 & 2 business issue one can address the level 3 & 4 people issue. Otherwise, there’s not much point in trying to address level 3 & 4 people issues if they aren’t causing any business problems.
 
 ![human capital framework](https://user-images.githubusercontent.com/46609482/69906847-b6afc100-137e-11ea-8829-b4b8c60d39e3.PNG)
 
@@ -27,9 +27,9 @@ Reference: https://www.hrzone.com/perform/business/people-analytics-why-some-com
 <br><br>
 <br><br>
 # Objective
-Now for the purpose of this project we want to maximise returns from invested capital by finding where to invest to increase capital efficieny.
+Now for the purpose of this project we want to maximize returns by investing capital efficiently.
 
-__Problem__: Where to invest capital to increase capital efficiency and therfore maximize return?
+__Problem__: Where to invest capital to increase capital efficiency and therfore maximize returns?
 
 __Strategy__: 
 1. Address human capital efficiency issue by retaining talented employees(reduce flight risk).
