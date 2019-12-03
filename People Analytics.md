@@ -65,18 +65,7 @@ HR_data = read.csv("WA_Fn-UseC_-HR-Employee-Attrition.csv")
 str(HR_data)
 ```
 ![attrition str](https://user-images.githubusercontent.com/46609482/68713139-09514680-0552-11ea-8e6d-f1535c00eee9.PNG)
-
-
-```r
-# Summary of data
-summary(HR_data)
-```
-![atrrition summary](https://user-images.githubusercontent.com/46609482/68715070-05bfbe80-0556-11ea-91ca-7a0ee1668071.PNG)
-![attrition summary2](https://user-images.githubusercontent.com/46609482/68715093-0f492680-0556-11ea-8717-ccdd0ea4c52c.PNG)
-
-*No NA values spotted*
-
-*__Explanation of some variables__*:
+## Explanation of some variables
 
 __Attrition__(label/the variable to predict) : "yes" if an employee has left the organization otherwise "no"
                
@@ -93,9 +82,18 @@ __PerformanceRating__: 1 'Low' 2 'Good' 3 'Excellent' 4 'Outstanding'
 __RelationshipSatisfaction__: 1 'Low' 2 'Medium' 3 'High' 4 'Very High'
 
 __WorkLifeBalance__: 1 'Bad' 2 'Good' 3 'Better' 4 'Best'
+
+```r
+# Summary of data
+summary(HR_data)
+```
+![atrrition summary](https://user-images.githubusercontent.com/46609482/68715070-05bfbe80-0556-11ea-91ca-7a0ee1668071.PNG)
+![attrition summary2](https://user-images.githubusercontent.com/46609482/68715093-0f492680-0556-11ea-8717-ccdd0ea4c52c.PNG)
+
+*No NA values spotted*
 <br><br>
 <br><br>
-# Background on Attrition(predicting variable)
+# Understanding Attrition(Predicting variable)
 Attrition can be caused by both voluntary(e.g. retirement, quit) or involuntary (e.g. layoff) reason. Nonethless, identifying factors that leads to unwanted attrition can help an organization to take preventive measures.
 
 Older age seems to be a reasonable factor for the retirement related attrition, other variables such as income, commute distance and job satisfaction could play a significant role for employees when deciding to stay with organization.
