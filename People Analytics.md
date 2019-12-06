@@ -176,14 +176,14 @@ ggplot(HR_data, aes(x=Attrition, y=MonthlyIncome, fill=Attrition)) +
 3. Large monthly income difference shows that attrition occurance could be relative to overtime/hours worked. Meaning employees favor working more hours and hence earning more income.
 <br><br>
 
-## By Environment
+## By Satisfaction
 
 ```r
 # Job-satisfaction visualization
 ggplot(HR_data, aes(x=factor(JobSatisfaction), fill = Attrition, color = Attrition)) + geom_bar() +
   geom_text(aes(label=..count..),stat="count",position=position_stack(0.5), color="blue")
 
-# calculating attrition proportion by each Job satisfaction level
+# calculating attrition proportion by each level
 percentData <- HR_data %>% group_by(JobSatisfaction) %>% count(Attrition) %>%
   mutate(ratio=scales::percent(n/sum(n)))
   
@@ -192,3 +192,18 @@ ggplot(HR_data, aes(x=factor(JobSatisfaction), fill = Attrition, color = Attriti
   geom_text(data=percentData, aes(y=n,label=ratio), position=position_fill(vjust=0.5),color="blue")
 ```
 ![attrition by jobsatisfaction](https://user-images.githubusercontent.com/46609482/69504873-38b16d00-0edb-11ea-82af-0ed582f145b0.PNG)![attrition by jobsatisfaction prop](https://user-images.githubusercontent.com/46609482/69504878-44049880-0edb-11ea-9038-cc150bbba2b8.PNG)
+
+```r
+# Environment-satisfaction visualization
+ggplot(HR_data, aes(x=EnvironmentSatisfaction, fill = Attrition, color = Attrition)) + geom_bar() +
+  geom_text(aes(label=..count..),stat="count",position=position_stack(0.5), color="blue")
+
+# calculating attrition proportion by each level
+percentData <- HR_data %>% group_by(EnvironmentSatisfaction) %>% count(Attrition) %>%
+  mutate(ratio=scales::percent(n/sum(n)))
+
+# proportion visualization
+ggplot(HR_data, aes(x=EnvironmentSatisfaction, fill = Attrition, color = Attrition)) + geom_bar(position="fill") +
+  geom_text(data=percentData, aes(y=n,label=ratio), position=position_fill(vjust=0.5),color="blue") 
+```
+
