@@ -96,7 +96,7 @@ summary(HR_data)
 # Understanding Attrition(Predicting variable)
 Attrition can be caused by both voluntary(e.g. retirement, quit) or involuntary (e.g. layoff) reason. Nonethless, identifying factors that leads to unwanted attrition can help an organization to take preventive measures.
 
-Older age seems to be a reasonable factor for the retirement related attrition, other variables such as income, commute distance and job satisfaction could play a significant role for employees when deciding to stay with organization.
+While older age seems to be a reasonable factor for the retirement related attrition, other variables such as income, commute distance and job satisfaction could play a significant role for employees when deciding to stay with organization.
 
 Let's see what causes employees to quit. Is employee's decision mostly driven by income, environment or some other unknown variable?
 <br><br>
