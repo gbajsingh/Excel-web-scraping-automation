@@ -12,7 +12,7 @@ __Strategy__:
 2. Address issues in workforce capabilities(e.g. automating low-level repetitive tasks)
 3. Finally, use employee-centric training to deliver these.
 
-*Revenue Growth(Level 1) => Productivity(Level 2) => Workforce Performance & Agility(Level 3) => Learning & Development(Level 4)*
+*Revenue Growth(Level 1) <= Productivity(Level 2) <= Workforce Performance & Agility(Level 3) <= Learning & Development(Level 4)*
 <br><br>
 <br><br>
 __Problem__: Business wants to enhance innovation(Level 2)
@@ -21,7 +21,7 @@ __Strategy__:
 1. Identify where their company’s corporate culture is inhibiting competitive advantage
 2. Design interventions to remedy these issues.
 
-*Innovation(Level 2) => Cultural Alignment(Level 3) => Learning & Development(Level 4)*
+*Innovation(Level 2) <= Cultural Alignment(Level 3) <= Learning & Development(Level 4)*
 <br><br>
 Reference: https://www.hrzone.com/perform/business/people-analytics-why-some-companies-are-making-a-fortune-while-others-are-losing
 <br><br>
