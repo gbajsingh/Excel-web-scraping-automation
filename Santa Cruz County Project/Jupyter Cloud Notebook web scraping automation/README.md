@@ -1,7 +1,11 @@
-# Web scraping automation with jupyter cloud notebook
-Developed a tool to automatically output an excel file with web query results filled in a desired column. To accomplish the task I wrote a R script on Kaggle jupyter cloud notebook.
-The script takes the information(Addresses) from Property Address column; submits a form with the address on the appropriate website(i.e. Propertyshark.com); performs a query;
-and extracts the results to store it to a new file.
+# R web scraping automation
+Wrote a script to extract "Property Addresses biodata" from website and store in excel. As the script is available on cloud it can be run from anywhere.
 
-## Demo
-https://www.youtube.com/watch?v=Z1gEpFyhCjY
+# Process
+1. Script takes the information(Addresses) from spreadsheet.
+2. Script submits a web-form (@Propertyshark.com).
+3. Script extracts result and stores back in same spreadsheet.
+
+
+
+*In case of interruption, while running code, the script will pick up from the row it has stopped when ran again.
