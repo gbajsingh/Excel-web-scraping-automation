@@ -1,5 +1,5 @@
-# RStudio Cloud web scraping automation
-Wrote a script that extract "Property Addresses biodata" from website and stores in excel. As the script is available on cloud it can be run from anywhere.
+# R web scraping automation
+Wrote a script to extract "Property Addresses biodata" from website and store in excel. As the script is available on cloud it can be run from anywhere.
 
 # Process
 1. Script takes the information(Addresses) from spreadsheet.
@@ -8,4 +8,4 @@ Wrote a script that extract "Property Addresses biodata" from website and stores
 
 
 
-*In case of interruption, while running code, the script will pick up from the row it has stopped when ran again.
+*In case the script is interrupted while running, the script would pick up back from the same row it has stopped when ran again.
