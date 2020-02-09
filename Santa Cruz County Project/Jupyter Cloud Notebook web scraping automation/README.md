@@ -8,4 +8,4 @@ Wrote a script to extract "Property Addresses biodata" from website and store in
 
 
 
-*In case of interruption, while running code, the script will pick up from the row it has stopped when ran again.
+*In case the script is interrupted while running, the script would pick up back from the same row it has stopped when ran again.
