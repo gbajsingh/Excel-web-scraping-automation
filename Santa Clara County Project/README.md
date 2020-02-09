@@ -4,7 +4,7 @@ Wrote a script that extract "Property Addresses biodata" from website and stores
 # Process
 1. Script takes the information(Addresses) from spreadsheet.
 2. Script submits a web-form (@Propertyshark.com).
-3. Script extracts results and  saves back in same spreadsheet.
+3. Script extracts result and stores back in same spreadsheet.
 
 
 
