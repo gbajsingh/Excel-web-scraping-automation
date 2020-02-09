@@ -1,6 +1,16 @@
-# Excel-web-scraping-automation
+# VBA/excel-web-scraping-automation
 
-Developed a tool to autofill the excel cells with web query result. To accomplish the task I created a macro in excel by writing a Visual Basic script. The script takes the information(Property Addresses) from range of selected cells; navigates to the desired website, performs a query on the website and extracts the results back into the spreadsheet.
+Wrote a VBA script that extracts "Property Addresses biodata" from website and stores in excel. Script is available by downloading only
+
+# Process
+1. Script takes the information(Addresses) from spreadsheet.
+2. Script submits a web-form (@Propertyshark.com).
+3. Script extracts result and stores back in same spreadsheet.
+
+
+*To run select the desired cells to be filled and Press Ctrl + R.
+
+
   
 ## Demo
 https://www.youtube.com/watch?v=GJuOoaPyjEo
