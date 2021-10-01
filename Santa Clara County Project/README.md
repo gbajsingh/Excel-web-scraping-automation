@@ -1,10 +1,10 @@
-# R web scraping automation
-Wrote a script to extract "Property Addresses biodata" from website and store in excel. As the script is available on cloud it can be run from anywhere.
+# R web scraping
+Wrote a script to extract "Property Addresses biodata" from website and save it in spreadsheet. Accesible from both Mac and windows OS.
 
 # Process
 1. Script takes the information(Addresses) from spreadsheet.
-2. Script submits a web-form (@Propertyshark.com).
-3. Script extracts result and stores back in same spreadsheet.
+2. Submits a web-form (e.g. @Propertyshark.com).
+3. Extracts desired data from resulting page and stores back into the same spreadsheet.
 
 
 
