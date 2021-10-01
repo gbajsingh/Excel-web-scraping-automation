@@ -1,10 +1,10 @@
 # VBA/excel-web-scraping
 
 
-Wrote a script that extracts "Property Addresses biodata" from a website and saves it in excel. Script can be copied to your own Excel VBA environment and can be executed as a Macro. Or, simply download the Excel file that contains the script.
+Wrote a script that extracts "Property Addresses biodata" from a website and saves it in excel. Script can be copied to your own Excel VBA environment and executed as a Macro or, simply download the Excel file that contains the script.
 
 # Flow work
-1. Script takes the information(Address) from the spreadsheet.
+1. Script takes the information(i.e. Address) from the spreadsheet.
 2. Submits a web-form (@Propertyshark.com).
 3. Extracts the desire data from the resulting page and saves it back in the spreadsheet.
 
