@@ -42,7 +42,7 @@ SC = subset(SC, !is.na(Property_Address))
 df = subset(SC, select = c(Property_Address))
 
 
-# Function: extract Search text from Addresses to submit the web page form; store it to S_Text vector
+# Function: extract text from Addresses to submit the web page form; store it to S_Text vector
 ext_S_text = function(Addresses){
   S_Text  =  c()
   x = 0
